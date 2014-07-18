@@ -43,7 +43,7 @@ def color_fun(row):
         else:
             return 0.
 
-sims=1
+sims=30
 errors_with=[]
 
 def run():
@@ -76,9 +76,9 @@ def run():
 		errors_with.append(entry)     
 
 
-
-cProfile.run("run()")
-print errors_with
+for i in range(sims):
+	cProfile.run("run()")
+print "total errors in each case" errors_with
 
 
 
