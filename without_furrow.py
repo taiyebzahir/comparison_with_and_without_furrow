@@ -73,4 +73,4 @@ def run():
 
 for i in range(sims):
 	cProfile.run("run()")
-print "total errors in each case" errors_with
+print "total errors in each case", errors_with
